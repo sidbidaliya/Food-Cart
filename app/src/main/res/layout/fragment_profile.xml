@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_user_man"
+        android:background="@drawable/circular_background"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_verified_check_mark"
+        android:drawablePadding="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="@string/name"/>
+
+            <TextView
+                android:id="@+id/userPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userName"
+                android:padding="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="20dp"
+                android:text="@string/phone_number"/>
+
+            <TextView
+                android:id="@+id/userMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userPhone"
+                android:padding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="20dp"
+                android:text="@string/email"/>
+
+            <TextView
+                android:id="@+id/userAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userMail"
+                android:padding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="20dp"
+                android:text="@string/address"/>
+
+            <TextView
+                android:id="@+id/userLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userAddress"
+                android:padding="10dp"
+                android:layout_margin="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_logout"
+                android:drawablePadding="20dp"
+                android:text="@string/logout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/designed_by_sidhant_bidaliya"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

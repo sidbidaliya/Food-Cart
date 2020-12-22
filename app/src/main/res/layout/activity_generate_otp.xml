@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offWhite"
+    tools:context=".activity.GenerateOtpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgAppLogo3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/app_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/txtEnterDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgAppLogo3"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/enter_the_received_otp_below"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEnterDetails"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:hint="@string/otp_4_characters"
+            android:drawableStart="@drawable/ic_otp"
+            android:drawablePadding="10dp"
+            android:inputType="phone"
+            android:maxLength="4"/>
+
+        <EditText
+            android:id="@+id/etNewPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etOtp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/ic_key_fill_black"
+            android:drawablePadding="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:hint="@string/new_password_min_6_characters"
+            android:inputType="numberPassword"/>
+
+        <EditText
+            android:id="@+id/etConPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etNewPass"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/ic_key_fill_black"
+            android:drawablePadding="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:hint="@string/confirm_password"
+            android:inputType="numberPassword"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etConPass"
+            android:layout_margin="30dp"
+            android:background="@drawable/basic_custom_button"
+            android:text="@string/submit"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+</ScrollView>
